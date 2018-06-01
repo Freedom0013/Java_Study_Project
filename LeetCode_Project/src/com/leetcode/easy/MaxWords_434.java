@@ -3,7 +3,7 @@ package com.leetcode.easy;
 import java.util.Scanner;
 
 /**
- * 字符串中的单词数
+ * #434 字符串中的单词数
  * Question：
  * 统计字符串中的单词个数，这里的单词指的是连续的不是空格的字符。
  * 请注意，你可以假定字符串里不包括任何不可打印的字符。
@@ -19,7 +19,7 @@ public class MaxWords_434 {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		System.out.println("请输入要统计的字符串：");
-		String target = sc.nextLine(); // 读取字符串型输入
+		String target = sc.nextLine(); 
 		System.out.println("输入的是：" + target);
 		System.out.println("结果的是：" + countSegments(target));
 	}
