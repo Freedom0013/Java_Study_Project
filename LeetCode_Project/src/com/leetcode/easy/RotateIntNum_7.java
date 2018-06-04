@@ -30,17 +30,6 @@ public class RotateIntNum_7 {
 		}
 	}
 	
-	boolean IsOverFlow(int x, int y) {
-		int z = x + y;
-		if (x > 0 && y > 0 && z < 0) {
-			return true;
-		}
-		if (x < 0 && y < 0 && z > 0) {
-			return true;
-		}
-		return false;
-	}
-	
 	/**
 	 * 反转数字
 	 * @param x 整数
