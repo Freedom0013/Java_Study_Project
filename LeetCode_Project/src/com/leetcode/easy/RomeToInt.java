@@ -66,46 +66,47 @@ public class RomeToInt {
 	 * @return 转换后的整数
 	 */
 	public static int romanToInt(String s) {
-		s+=" ";										//防止字符串遍历下标越界
+		s += " "; 									// 防止字符串遍历下标越界
 		int result = 0;
-		for (int i = 0; i < s.length()-1; i++) {
+		for (int i = 0; i < s.length() - 1; i++) {
 			char roman1 = s.charAt(i);
-			char roman2 = s.charAt(i+1);
+			char roman2 = s.charAt(i + 1);
 			int num1 = selectRome(roman1);
 			int num2 = selectRome(roman2);
-			if(num1 < num2) {
+			if (num1 < num2) {
 				result = result - num1 + num2;
-                i++;
-            } else {
-            	result += num1;;
-            }
+				i++;
+			} else {
+				result += num1;
+				;
+			}
 		}
 		return result;
-    }
+	}
 	
 	/**
 	 * 罗马数字对应的蒸整数转换列表
 	 * @param c 单一罗马字符
 	 * @return 整数
 	 */
-	public static int selectRome(char c){
+	public static int selectRome(char c) {
 		switch (c) {
-	        case 'I':
-	            return 1;
-	        case 'V':
-	            return 5;
-	        case 'X':
-	            return 10;
-	        case 'L':
-	            return 50;
-	        case 'C':
-	            return 100;
-	        case 'D':
-	            return 500;
-	        case 'M':
-	            return 1000;
-	        default:
-	        	return 0;
+			case 'I':
+				return 1;
+			case 'V':
+				return 5;
+			case 'X':
+				return 10;
+			case 'L':
+				return 50;
+			case 'C':
+				return 100;
+			case 'D':
+				return 500;
+			case 'M':
+				return 1000;
+			default:
+				return 0;
 		}
 	}
 }
