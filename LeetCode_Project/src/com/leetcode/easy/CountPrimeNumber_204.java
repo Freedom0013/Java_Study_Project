@@ -15,7 +15,7 @@ import java.util.Scanner;
  * @date 2018Äê6ÔÂ6ÈÕ
  * @author Freedom0013
  */
-public class CountPrimeNumber {
+public class CountPrimeNumber_204 {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

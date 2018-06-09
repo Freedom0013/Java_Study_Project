@@ -8,15 +8,32 @@ package com.leetcode.utils;
  */
 public class CodeTimer{
 	/** 开始时间 */
-	private static long startTime;
+	private long startTime;
 	/** 开结束时间 */
-	private static long endTime;
+	private long endTime;
+	/** 单例 */
+	private static CodeTimer __Instance = null;
 	
-	public static void startTimer(){
+	/**
+	 * 获取计时器单例
+	 * @return 计时器
+	 */
+	public static CodeTimer getInstance() {
+ 		if (__Instance == null) {
+ 			synchronized (CodeTimer.class) {
+ 				if (__Instance == null) {
+ 					__Instance = new CodeTimer();
+ 				}
+ 			}
+ 		}
+ 		return __Instance;
+ 	}
+	
+	public void startTimer(){
 		startTime = System.nanoTime();
 	}
 	
-	public static void stopTimer(){
+	public void stopTimer(){
 		endTime = System.nanoTime();
 		System.out.println("程序运行时间： "+(endTime-startTime)+"ns");
 	}

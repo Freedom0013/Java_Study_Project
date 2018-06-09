@@ -46,7 +46,7 @@ import java.util.Scanner;
  * @date 2018Äê6ÔÂ5ÈÕ
  * @author Freedom0013
  */
-public class RomeToInt {
+public class RomeToInt_13 {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

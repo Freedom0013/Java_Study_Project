@@ -19,7 +19,7 @@ import java.util.Scanner;
  * @date 2018Äê6ÔÂ4ÈÕ
  * @author Freedom0013
  */
-public class MySqrtExample {
+public class MySqrtExample_69 {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

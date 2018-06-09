@@ -16,7 +16,7 @@ import java.util.Scanner;
  * @date 2018Äê6ÔÂ8ÈÕ
  * @author Freedom0013
  */
-public class YangHuiNumberII {
+public class YangHuiNumberII_119 {
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
