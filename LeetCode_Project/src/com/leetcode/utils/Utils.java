@@ -28,6 +28,26 @@ public class Utils {
 	}
 	
 	/**
+	 * 打印数组(int)
+	 * @param nums 被打印数组
+	 */
+	public static void printfArray(final char[] ch) {
+		if (ch == null || ch.length == 0) {
+			System.out.println("数组为空或数组长度为0");
+			return;
+		}
+		for (int i = 0; i < ch.length; i++) {
+			if (i == 0) {
+				System.out.print("[" + ch[i]);
+			} else if (i < ch.length - 1) {
+				System.out.print("," + ch[i]);
+			} else if (i == ch.length - 1) {
+				System.out.println("," + ch[i] + "]");
+			}
+		}
+	}
+	
+	/**
 	 * 打印数组(boolean)
 	 * @param nums 被打印数组
 	 */
