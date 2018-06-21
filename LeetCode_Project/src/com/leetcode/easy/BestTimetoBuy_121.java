@@ -41,7 +41,7 @@ public class BestTimetoBuy_121 {
 		templow = prices[0];
 		for (int i = 1; i < prices.length; i++) {
 			temp = prices[i];
-			if (templow > temp) {	
+			if (templow > temp) {
 				//找出最低价格
 				templow = temp;
 			} else {		
